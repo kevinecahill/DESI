@@ -13,7 +13,7 @@ program x2t2025
   integral = zero
   da = one/na; a = half*da
   do i = 1, na
-     integral = integral + da*TH/sqrt(OmL*(a**(-three*(one + w0 + wa))*exp(-three*wa*(one - a))*a**2 + OmK + Omm/a + Omr/a**2))
+     integral = integral + da*TH/sqrt(OmL*(a**(-three*(one + w0 + wa))*exp(-three*wa*(one - a))*a**2) + OmK + Omm/a + Omr/a**2)
      t(i) = integral ! time in years to get to a/a_0 = x
      a = a + da
   end do
